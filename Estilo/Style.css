@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Delm";
+  src: url(Fuentes/Delm/Delm-SemiLight.ttf);
+}
+@font-face {
+  font-family: "Delm-Light";
+  src: url(Fuentes/Delm/Delm-Light.ttf);
+}
+
+* {
+  margin: 0;
+}
+
+
+
+
+
+
+.imagen_hamburguesa {
+  background-image: url(../Imagenes/971.jpg);
+
+  width: 100%;
+  height: 1000px;
+  background-size: 100%;
+  background-repeat: no-repeat; /* Fondo*/
+  background-position-x: 18%;
+  background-position-y: 40%;
+  /* filter: brightness(0.3); */
+  z-index: 1;
+  background-attachment: fixed;
+  position: relative;
+}
+.imagen_logo {
+  width: 750px;
+  filter: saturate(52); /*Logo*/
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  z-index: 2;
+}
+
+nav {
+  top: 0;
+  right: 39%;
+  position: absolute;
+  text-align: center;
+  font-size: 25px; /*Barra de navegación*/
+  z-index: 3;
+  color: white;
+  font-family: "Delm";
+  margin-top: 30px;
+}
+nav li {
+  filter: none;
+  font-size: 30px;
+  display: inline;
+  font-family: "Delm"; /*Estilo items barra de navegación*/
+  margin-left: 35px;
+}
+nav a {
+  text-decoration-line: none; /*Estilo de los enlaces*/
+  color: white;
+}
+nav li:hover   {
+ font-weight:bolder;
+  border-radius: 8px; /*Estilo items barra de navegación*/
+  font-size: 30px;
+  color: aqua;
+}
+.section {
+  font-family: "Delm";
+  font-size: 45px;
+  color: #c191d4; /*Titulos*/
+  text-align: center;
+  margin-top: 70px;
+  
+}
+.titulo {
+  font-family: "Delm-light";
+}
+section p {
+  font-family: "Delm";
+  color: #7a7a7a;
+  margin-left: 23%; /*Estilo de parrafos de menu y*/
+  margin-top: 20px;
+  font-size: 25px;
+  width: 54%;
+}
+.imagenes {
+  height:  200px;
+  width: 225px;
+  margin-left: 25px; /*Tamaño de imagenes */
+  margin-top: 55px;
+  filter: grayscale(1);
+}
+.imagenes:hover {
+  filter: grayscale(0); /*Animacion de imagenes */
+  transform: scale(1.07);
+}
+#p2 {
+  margin-bottom: 50px; /*Estilo segundo parrafo*/
+}
+hr{
+  margin-top: 100px;
+  width: 75%;
+  color: grey;
+  margin-left: 12.5%;
+}
+#imagen_hamburguesa_abajo {
+ position: relative;
+ overflow: hidden;
+  height: 100%;
+  width: 100%;
+   /*Segunda imagen de fondo*/
+display:grid;
+
+grid-template-columns: auto auto auto;
+
+
+
+}
+#imagen_hamburguesa_abajo::before {
+  content: "";
+  background-image: url(../Imagenes/971.jpg);
+  filter: brightness(0.5); /* Aplica el filtro de brillo al fondo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: 3%;
+  background-position-y: -30%;
+
+  margin: 0;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+
+
+footer h1 {
+  font-family: "Delm-light"; /*Estilo del h1 conocenos*/
+  text-align: left;
+  font-size: 70px;
+  color: #ffffff;
+
+  z-index: 1;
+}
+footer img {
+  width: 45px;
+  border-radius: 22px; /*Estilo de logo de redes sociales*/
+  background-color: rgb(255, 255, 255);
+}
+
+footer img:hover {
+  transition:1.5s ;
+  background-color: rgb(0, 225, 255);
+  border-radius: 20px;
+  transform: scale(1.07); /*Estilo de logo de redes sociales*/
+}
+
+footer {
+ height: 500px;
+  list-style: none;
+  color: white;
+  font-family: "Delm";
+ margin-top: -5px;
+ text-align: center;
+}
+.footer{
+
+  padding-right: 7px;
+}
+.logofooter {
+  display: flex;
+  list-style: none;
+}
+.footer2 {
+  font-size: 20px;
+
+  list-style: none;
+  color: white;
+  font-family: "Delm";
+}
+.grid{
+  margin-top: 15%;
+  margin-left: 20%;
+}
+.grid .p2 {
+  margin-top: 7%;
+}
+
+#mapa {
+   /*Todo esto aes para ubicarlo en el footer, el estilo de cada imagen y texto*/
+  list-style: none;
+}
+.imagen_onda{
+  filter: brightness(0.9);
+  opacity: 0.9;
+  
+}
+footer p {
+  text-align: center;
+  font-family: "Delm";
+  color: rgb(187, 190, 186); /*Texto copyright*/
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background-color: black;
+}
+/*#divsection3 {
+  width: 450px;
+  height: 150px;
+  background-color: #f3a71f;
+  margin-bottom: 150px;
+}*/
+section table {
+  margin-left: 80%;
+}
+section td img {
+  width: 450px;
+}
+section td h1 {
+  font-family: "Delm";
+  font-size: 150px;
+  font-weight: 700;
+}
